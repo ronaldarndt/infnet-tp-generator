@@ -1,0 +1,19 @@
+{
+  "name": "infnet-tp-generator",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "bun index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@codesandbox/sdk": "^0.11.2",
+    "md-to-pdf": "^5.2.4"
+  }
+}
