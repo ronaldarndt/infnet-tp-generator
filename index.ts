@@ -17,7 +17,7 @@ const sdk = new CodeSandbox(config.codesandboxToken);
 
 const { sandboxes } = await sdk.sandbox.list();
 
-const list = sandboxes.filter(x => x.title?.startsWith(config.prefix));
+const list = sandboxes.filter(x => x.title?.startsWith(`DR${config.dr}`));
 
 const nonPublicSandbox = list.find(x => x.privacy !== "public");
 
@@ -45,7 +45,10 @@ const replacedTemplate = template
   .replace("{{date}}", new Date().toLocaleDateString())
   .replace("{{questions}}", formattedQuestions);
 
+const normalizedName = config.name.replaceAll(" ", "_").toLowerCase();
+const fileName = `${normalizedName}_DR${config.dr}_TP${config.tp}.pdf`;
+
 await mdToPdf(
   { content: replacedTemplate },
-  { dest: "output.pdf", stylesheet: ["./styles.css"] }
+  { dest: fileName, stylesheet: ["./styles.css"] }
 );

@@ -14,4 +14,4 @@ Depois é só seguir os passos
 4. Rodar o comando `bun install` uma única vez na raiz do projeto
 5. Rodar o comando `bun generate` sempre que quiser gerar o pdf
 
-Prontinho! Você terá um arquivo `output.pdf` lhê esperando.
+Prontinho! Você terá um arquivo `nome_sobrenome_DRx_TPx.pdf` lhê esperando.
