@@ -2,6 +2,10 @@
 
 Esse projeto visa gerar automaticamente o arquivo pdf solicitado pelos professores da Infnet nos TPs (testes de performance), com base no que você possui no CodeSandbox.
 
+## Versão web
+
+https://infnet.ronaldarndt.dev/
+
 ## Como rodar
 
 Primeiramente você precisa ter uma conta no CodeSandbox e ter feitos as questões por lá, nomeando-as conforme o padrão da instituição (DRx-TPx.x).
